@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cube Rotation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <style>
+      .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+        height: 100vh;
+        padding: 0px 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <article class="message is-warning">
+          <div class="message-header">
+            <p>Warning</p>
+          </div>
+          <div class="message-body">
+            You can enter only float values between 0.0 and 1.0 in Red , Blue
+            and Green input form
+          </div>
+        </article>
+        <form method="POST" action="/form">
+          <div class="field">
+            <label class="label">Red (R)</label>
+            <div class="control">
+              <input
+                class="input"
+                type="number"
+                name="r"
+                required
+                step="any"
+                min="0.0"
+                max="1.0"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Green (G)</label>
+            <div class="control">
+              <input
+                class="input"
+                type="number"
+                name="g"
+                step="any"
+                required
+                min="0.0"
+                max="1.0"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Blue (B)</label>
+            <div class="control">
+              <input
+                class="input"
+                type="number"
+                name="b"
+                step="any"
+                required
+                min="0.0"
+                max="1.0"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Rotation Speed</label>
+            <div class="control">
+              <input
+                class="input"
+                type="number"
+                name="rotationSpeed"
+                required
+              />
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <button class="button is-link">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -11,10 +11,10 @@ yarn
 
 ## Starting the Server
 
-#### Local Development
+#### Development
 
 ```
-npm run watch
+npm start
 ```
 
 #### Production
